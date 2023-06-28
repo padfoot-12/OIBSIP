@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(2, 38, 116, 0.7), rgba(0, 0, 0, 0.9)), url(./images/cityscape.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#header {
+  background-color: rgb(2, 2, 56);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 250%;
+  font-family: 'lato', sans-serif;
+  font-weight: lighter;
+}
+
