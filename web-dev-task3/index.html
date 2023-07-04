@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Temperature Converter</h1>
+    </div>
+    <div id="main-content">
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          <span id="iu">Input Unit</span>
+          <span class="arrow"></span>
+        </button>
+        <ul class="dropdown-content" id="inp-unit">
+          <li style="--delay: 1;"><button class="unit-button" onclick="inpCel()">Celcius</button></li>
+          <li style="--delay: 2;"><button class="unit-button" onclick="inpFah()">Fahrenheit</button></li>
+          <li style="--delay: 3;"><button class="unit-button" onclick="inpKel()">Kelvin</button></li>
+        </ul>
+      </div>
+      <div id="input-button">
+        <input type="number" id="temp-input" placeholder="Input Temperature"/>
+        <button onclick="convert()" id="convert-button">Convert</button>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          <span id="ou">Output Unit</span>
+          <span class="arrow"></span>
+        </button>
+        <ul class="dropdown-content" id="out-unit">
+          <li style="--delay: 1;" value="C"><button class="unit-button" onclick="outCel()">Celcius</button></li>
+          <li style="--delay: 2;" value="F"><button class="unit-button" onclick="outFah()">Fahrenheit</button></li>
+          <li style="--delay: 3;" value="K"><button class="unit-button" onclick="outKel()">Kelvin</button></li>
+        </ul>
+      </div>
+    </div>
+    <div id="outputs">
+      
+    </div>
+  </body>
+</html>
